@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Portfolio</title>
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scroll.js"></script>
+       
+        <!--             Import fonts                      -->
+       
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+
+
+</head>
+<body>
+
+    <script>
+(function() {
+    function scrollHorizontally(e) {
+        e = window.event || e;
+        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+        document.documentElement.scrollLeft -= (delta*40); // Multiplied by 40
+        document.body.scrollLeft -= (delta*40); // Multiplied by 40
+        
+    }
+    if (window.addEventListener) {
+        // IE9, Chrome, Safari, Opera
+        window.addEventListener("mousewheel", scrollHorizontally, false);
+        // Firefox
+        window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+        // IE 6/7/8
+        window.attachEvent("onmousewheel", scrollHorizontally);
+    }
+})();
+
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollLeft: $(hash).offset().left
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+$(window).on('mousewheel DOMMouseScroll', function(e) {
+  var dir,
+      amt = 200;
+  
+  e.preventDefault();
+  if(e.type === 'mousewheel') {
+    dir = e.originalEvent.wheelDelta > 0 ? '-=' : '+=';
+  }
+  else {
+    dir = e.originalEvent.detail < 0 ? '-=' : '+=';
+  }      
+      
+  $('html, body').stop().animate({
+    scrollLeft: dir + amt
+  },200, 'linear');
+})
+
+
+    </script>
+     <div id="main">
+    <div id="div_main_left">            @@@@@@@@@@@@@@@@@@@@@         
+            @@@@@@@@@@@@&&&&&&&@@@@@@@@@@@@    
+      &&&&&&&@@@@@@@@@@@@@@@@&&&&@&&&&&&@@@@&@&
+      &&&&@&@&&&&&&%%%%%#%%&&@@@@@@@@@@@@@@@@@@
+   %%&&@&&&&%#(((/*************/(%@@@@@@@@@@&@@
+&&&&&@@&&&%%##(//****,,,,,,,,,,,******(&@@@@@@@@@
+@&&&&&&&%&%%#(//*****,,,,,,,,,,,,,*,******/#@@@@@@@
+@@@@&&          @@@@&&%%%#(//******,,*,,,,,,,,,,,,,,*********/&@@@@
+&&&&&&&&&&&@&&&@@       @@&&%(/*****,,,,,,,,,,,,,,,,,,,,,,***********/(&@@
+@@&&@&&(((#%&&&&@@@@@    @&%###(/####((/*,,,,,,,,,,,,,,,,,,,***********//#&@
+@@@@@@%,,,,..,.,,,(#%@@&&&%((/(//*****/(%%##(//*,,,,,,,,,,,,,***********//(%%&
+@@@@@@***,,,,,,.......,/&#(((#((////****,**/##%#((/*****,,,,,,,,,*********/(#%&&
+@@@@(,***,,,,,,.........,,*******/%@(/((//*////((((//**,****,***********///(%&&&
+@@&&**,**,,,,,,..........,,*,,,,,,*//(#&&(#%#(((///**,,,,,****////********/(#&@@
+@&@&,******,,,,,,...........,,*,...,,,,*(//((/((/(///*,,,,**//((##%%%%%%((/*//#&@@
+&&&&&@*******,,,............,,,,,*,.....,,,,,,**/*****,,,,,*/(#%##(((##%%&&%%%###&@@
+%%&&&&&&/***,.....   .......,,,,,**/*,,,,,,,,,,,,,,,**,,,,,,*/######((//**////(#%%&&@@
+%%%%%%%%%%/,....... .    .......,,***,,,*(**,,,,,,,,,,,,,,,,,,.,,*//((//#%%%(/*#((/(((#%&@@@
+&&%%%%%%%(,,,.,............  ........,,****,,,,*/(/***,,,,,,**,,,,,,..,,*///(////((/(@@@%#%###%%@@@@
+*,,.................... .........,,,****,,,,,,**/#(//*,,,,,****,,,...,,**/(//**,,***/###%&&&%%%%&@@@
+....... ....  .   ...........,,,,***,,,,,,,***/(/%##(/*,,,,,/#%%***,,,***//(/*,,,,,,****/(((((##&@@@
+.  ... ........,,,,,****,,,,,****//(//((%#(/*******//(#(######(///*,,,,,,,,,,****//((%@&@@
+...........,,,,,,**********////((((/(((****#&#(*,,,**//(%%&&&&%#(/**,,,,,,,,,,***//(#&@&  
+..........,,,,,,,********/////((((((((((%(**,,,,***(///,,,**///(///****,,,,,,,,,***/((#@@&@  
+.  ..........,,,,,,*******//(((((#(((##%%##&#(/***,,,,,,,,,*//(//***/////*******,,****/((#%@@     
+...........,,,,,,,,*****//((#######%&@@@@@@&%#(/****,,**,,,,,,,**/(###(//(////////***///(#%&@@@@    
+........,,,,,,,,,****//(##%#%%%&#@@@@@@@@&&%#(/***,,,,,**//*,****//(((&@%###(////(///((#%%&@@@@@@   
+....,,,,,,,,,****///(#%%%%&@@@@((#@@@@@&&&&%#(/***,,,,,,*******/*///////////*****//((#%#%@@@&&@@    
+.,,,,,,,,*****//((#%%&@@@@@@@@&(((%@@@@@&&&%##(/**,,,,,,**********////**,,,,,,**//(###%%@@&@@       
+,,,,,,*****//((#%&&&@@@@@@@@@@((((#%@@@@&&%%#((///*,,,,,,********///*********//(###(##&@@@(         
+,,*****///((#%&@@@&&@@@@@@@@@@(((((##&@@@&&###((//**/****,*********////////((#######&@@@%           
+****///((##%@&@@@&&&&@@@@@@@@@#((((##%&@@@@&%#(#//(///////**/((/(/////(((((((###%&@@@@@@%           
+*///((#%%@@@@@@@@@@@@@@@@@@@@@&(((((##%&&@@@&&%%%%(#####((((((##%#%###%%%%%&&&@@@@@@@               
+/((##%@@@@@@@@@@@@@@@@@@@@@@@@@#((((((##%%&@@@@@@&&%&##&##%#%%&&&&&&&&&@@@@@&@@@@@                  
+##%@@@@@@@@@@@@@@@@@@@@@@@@@@@@&(((((((###%%&@@@@@@@@@@&&&&&&%&@@@@@@@@@@@@@@@&@@@                  
+&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#((((((((####%&&@@@@@@@@@@@@@@@@@@@@@@@@@@&%%&@@@@                  
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@#(((///(((((##%%%&&&&&@@@@@@@@@@@@@&&%####%@@@@@@@@                
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@((//////(((((((####%%%%%&&&&&%%%##((((((&@@@@@@@@@@@@@@            
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@(///////////(((((((((#####(((((((((((#@@@@@@@@@@@@@@@@@@@@       
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@////////////////((/((////////////&@@@@@@@@@@@@@&@@@@@&@@&&     
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&//*****/////////////////////&@@@@@@@@@@@@@@@@@@@@@@@@&@&&    
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@//*************/*///%@@@@@@@@@@@@@@@@@@@&&@@@@@@@@@&@@@  
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&%###//(&@@@@@@@@@@@@&&&@@@@@@@@@&@&@@@@@@&&&&&@@&&
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@&@@@@@@@@@@@@@@@&&&&@@@@&@@@@@@&&&&@@@@@@&&@@&&&
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&&@@@&&&@@@@@&&&&@@@@@@@&@&@&&&
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@@@@@@&@@@@@@@@@&&&&&&&&&&&@@@@&@@@&@@@@&&&@@@@@@@@@&&@&&@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&@&@@@&@&&@&&&&&&&&&&&&@@@@&&&&&&@@@@@&&&@&@@@@@@@@&@&&&
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&&&&&&&&&&&&&&&&@&&&&&&&&@@@@&&&&&&&&@&@&&&&&&&&&@@@@&@&&&&</div>
+    <div id="div_main_right">
+            <h1>Socha Adrian</h1> 
+            <h2> <a href="mailto:adrian.soc98@gmail.com">adrian.soc98@gmail.com</a>  </h2>
+            <a href="#second" class="button" > Learn more</a>
+    </div>
+    <div id="second" class="show-on-scroll">
+<h1> Im Passionate self-taugh webdesigner. </h1>
+</div>
+
+<div id="third" class="show-on-scroll"> <h1> I learnt everything from scratch by myself</h1></div>
+<div id="for" class="show-on-scroll"> <h1> I love making websites and working with people</h1></div>
+<div id="five" class="show-on-scroll"> <h1> Your success is mine success so lets do it right</h1><h2> <a href="mailto:adrian.soc98@gmail.com">Send me mail: adrian.soc98@gmail.com</a>  </h2> </div>
+
+</div>
+
+
+
+</body>
+</html>

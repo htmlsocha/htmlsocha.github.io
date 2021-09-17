@@ -1,0 +1,116 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    height: 100vh;
+    background-color:bisque;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+#main {
+    display: inline-flex;
+    height: 100vh;
+    width: auto;
+}
+
+#div_main_left
+{
+
+    width: 40vw;
+    height: 100vh;
+    float: left;
+    color: black;
+    white-space: pre;
+    letter-spacing: 0;
+    line-height: 1.35;
+    font-family: 'Consolas','BitstreamVeraSansMono','CourierNew',Courier,monospace;
+    font-size: 12px;
+    text-align: right;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#div_main_right 
+{   
+    position: relative;
+    top: 30vh;
+    width: 60vw;
+    height: 100vh;
+    text-align: center;
+    margin-bottom: auto;
+    overflow-y: hidden;
+}
+
+h1 {
+
+    font-size: 60px;
+}
+
+#div_main_right h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 120px;
+    margin-bottom: -30px;
+}
+
+
+h2 a{
+    font-family: 'Kaisei HarunoUmi', serif;
+    font-size: 20px;
+    font-weight: 100;
+    color:rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+
+a.button {
+    margin-top: -10px;
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+
+#second {
+    position: relative;
+    left: 23vw;
+    width: 50vw;
+    padding-top: 30vh;
+    padding-left: 2vw;
+}
+
+#third {
+    position: relative;
+    width: 50vw;
+    left: 75vw;
+    width: 50vw;
+    padding-top: 35vh;
+}
+
+#for {
+    position: relative;
+    width: 50vw;
+    left: 125vw;
+    width: 50vw;
+    padding-top: 35vh;
+}
+
+#five {
+    position: relative;
+    width: 50vw;
+    left: 175vw;
+    width: 50vw;
+    padding-top: 35vh;
+    padding-right: 10vw;
+}
