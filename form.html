@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="/"><img src="assets/img/logo2.png" alt=""></a>
+        <h1>TiptopSite Softwarehouse</h1>
+        <span></span> <!-- styling purposes -->
+        <div class="navbar-links">
+            <a href="#section-about">About Us</a>
+            <a href="#section-services">Services</a>
+            <a href="#section-portfolio">Portfolio</a>
+            <a href="#section-pricing">Pricing</a>
+            <a href="#section-contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <div>
+        <div class="container">
+            <div class="row" id="form-cont">
+
+                <div class="col-md-6 col-xl-5" id="left"></div>
+
+                <div class="col-md-6 col-xl-7" id="right">
+                    <form action="send_wycena.php" method="post" id="form1">
+
+                        <div class="form-row">
+                            <div class="form-row-name">Name and surname:</div>
+                            <input type="text" placeholder="John Smith" name="name">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-row-name">Email:</div>
+                            <input type="email" name="email" placeholder="john@smith.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-row-name">Your budget:</div>
+                            <input type="text" placeholder="Your budget&nbsp; ( &nbsp;zł &nbsp; / &nbsp; $&nbsp; / &nbsp;€ / &nbsp;£ &nbsp; )" name="budget">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-row-name">Project intro:</div>
+                            <span></span>
+                        </div>
+
+                        <div class="form-text">
+                            <textarea placeholder="My project is about..." name="shortabout" form="form1"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <span></span>
+                            <input type="submit" name="submit" id="submit" value="Send Message">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<<PROJECT DETAILS>>
+
+1. Imie Nazwisko
+2. Twój Mail
+3. Numer telefonu
+4.  Szacowany budżet
+5. Krótko o czym jest projekt
+6. Jaki jest twój aktualny albo przewidywany adres Internetowy?
+7. Jak szybko chciałbyś otrzymać swoją stronę Internetową?
+8. Jak dużo podstron chciałbyś posiadać?
+9. Posiadasz logo, lub jakieś inne brandowe materiały jak ulotki, wizytówki?
+10. Jak ważnym dla Ciebie jest SEO dla twojej strony?
+11. Czy potrzebujesz hosting i email? 
+
+<< CURRENT SITE >> 
+12. Kto aktualnie jest twoją platformą hostingową?
+
+13. Czy aktualna treść strony będzie używana?
+
+
+<<NEW SITE>> 
+14. Pierwsze spojrzenie na stronę zawsze jest najważniejsze, to ono zazwyczaj decyduje czy na niej zostaniemy czy ruszymy dalej, jak opisałbyś pierwsze doświadczenie w które celujesz u klienta? ( np.: nowoczesna, elegancka, minimalistyczna etc) 
+
+15. W jakich klientów celujesz? ( wiek, zawód, płeć, miejsce zamieszkania etc) 
+
+16. Jakie obrazy najlepiej przedstawiają twój biznes? ( korporacja, przemysł, natura etc)
+
+17. Czy posiadasz schemat kolorów, jeżeli nie jakie są twoje preferencje? 
+
+18. Czy potrzebujesz CMS (Content Managment System) aby utrzymywać i dodawać kontent na swoja stronę samodzielnie (lub z lekką pomocą – dołączony poradnik) 
+
+19. Jakie funkcjonalnosci poza dodawaniem postów, najnowszymi postami i podstawowymi funkcjami narzedzi CMS chciałbyś na stronie posiadać (blog, kalendarz, szukanie, formularze zgłoszeniowe etc)
+
+20. Czy potrzebujesz możliwości E-Commerce (sklepy internetowe)
+
+21. Umieść tutaj proszę strony konkurencji z twojej niszy, co ci się w nich podoba a co nie? Co chciałbyś mieć w swojej stronie?
+
+
+22. Czy są jakieś strony które ci się podobają? Dlaczego? ( np. jakaś część strony, menu, kolory, czcionka, zdjęcia, nagłówki) 
+
+23. Dodatkowe komentarze 
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiptopsite template - 2</title>
+    <meta name="description" content="Stwórz stronę z TipTopSite.net. Napisz do nas poprzez formularz w celu wyceny swojego projektu i zacznij zarabiać!">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/scss/main.scss">
+
+</head>
+
+<body>
+
+    <nav>
+        <h1>Parallax Nature</h1>
+        <div class="navbar-links-dropdown">
+
+            <i class="im im-menu navbar-links-dropdown-btn" id="btn-1" role="button" onclick="hideShowOption()"></i>
+            <i class="im im-x-mark navbar-links-dropdown-btn" id="btn-2" role="button" style="display: none;" onclick="hideShowOption()"></i>
+
+            <div id="navbar-links-dropdown-content">
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+                <a href="#">Option 4</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="parallax-img parallax-img--one">
+        <h2>What is nature?</h2>
+    </section>
+
+    <section class="content">
+        <div class="content-blocks">
+
+            <div class="content-block">
+                <img src="assets/img/icons8-fire-100.png" alt="">
+                <span>Fire</span>
+            </div>
+
+            <div class="content-block">
+                <img src="assets/img/icons8-leaf-100.png" alt="">
+                <span>Wind</span>
+            </div>
+
+            <div class="content-block">
+                <img src="assets/img/icons8-alps-100.png" alt="">
+                <span>Earth</span>
+            </div>
+
+            <div class="content-block">
+                <img src="assets/img/icons8-water-100.png" alt="">
+                <span>Water</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="parallax-img parallax-img--two">
+        <h2>A moment?</h2>
+    </section>
+
+    <section class="content">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor metus eget varius viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce suscipit odio mauris, a auctor nisi consectetur in. Integer vestibulum turpis at odio viverra, in accumsan odio auctor. Praesent dapibus risus bibendum, aliquam est vel, auctor sem. Vestibulum suscipit accumsan posuere. Maecenas fringilla purus vitae tristique porttitor. Aliquam erat volutpat.</p>
+        <p>Aenean scelerisque urna quis massa pellentesque, id rhoncus nisl placerat. Sed quis enim in quam ullamcorper commodo quis a odio. Phasellus dignissim mi id bibendum rutrum. Morbi mattis, libero eget placerat bibendum, est magna lobortis eros, id finibus mi odio quis mi. Donec lacinia eros risus, eget pulvinar lorem imperdiet sit amet. Nulla pretium lacus quis magna mattis pellentesque. Quisque in ligula vehicula, convallis est et, aliquam felis. Suspendisse blandit, arcu sit amet efficitur porta, augue justo bibendum quam, quis blandit orci ante ut tellus. Praesent in ex enim. Sed sed nisi eget lorem finibus pharetra. Suspendisse eu ante tempus, tincidunt neque sit amet, lacinia tellus. Mauris dignissim tincidunt urna, vel pulvinar tortor elementum ac. Sed convallis varius est, eget fringilla nisi.</p>
+
+    </section>
+
+    <section class="parallax-img parallax-img--three">
+        <h2>A feeling?</h2>
+    </section>
+
+    <section class="content">
+
+        <div class="newsletter">
+
+            <img src="assets/img/icons8-hummingbird-100.png" alt="">
+
+            <h3>Find out by subscribing our newsletter</h3>
+
+            <a class="newsletter-btn" href="#" role="button"> subscribe </a>
+        </div>
+
+    </section>
+
+    <section class="parallax-img parallax-img--four">
+        <h2>Just a nice view?</h2>
+    </section>
+
+    <section class="content">
+
+        <div class="location">
+
+            <h3>Meet with us!</h3>
+
+            <section id="contact" class="map"><iframe allowfullscreen="" frameborder="0" src="https://cdn.bootstrapstudio.io/placeholders/map.html" width="100%" height="400"></iframe></section>
+
+        </div>
+    </section>
+
+</body>
+
+
+<footer>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></footer>
+
+<script type="text/javascript" charset="utf-8">
+
+    function hideShowOption() {
+
+        var x  = document.querySelector('#navbar-links-dropdown-content');
+
+        if(x.style.display === 'none' || x.style.display === '') {
+
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+
+        var b1  = document.querySelector('#btn-1');
+        var b2  = document.querySelector('#btn-2');
+
+        if(b2.style.display === 'none' || b2.style.display === '') {
+            b2.style.display = "block";
+            b1.style.display = "none";
+        } else {
+            b1.style.display = "block";
+            b2.style.display = "none";
+        }
+
+    }
+
+
+    // The function actually applying the offset
+    function offsetAnchor() {
+        if(location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - 80);
+        }
+    }
+
+    // This will capture hash changes while on the page
+    window.addEventListener("hashchange", offsetAnchor);
+
+    // This is here so that when you enter the page with a hash,
+    // it can provide the offset in that case too. Having a timeout
+    // seems necessary to allow the browser to jump to the anchor first.
+    window.setTimeout(offsetAnchor, 1);
+</script>
+
+</html>

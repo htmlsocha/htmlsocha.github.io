@@ -1,0 +1,40 @@
+<section class="getintouch">
+    <div class="container">
+        <div class="text-center">
+            <h4 style="color: #212529;font-size: 45px;">Get in touch</h4>
+        </div>
+        <hr class="hr" />
+        <div class="form-container">
+            <form>
+                <div class="form-row">
+                    <div class="col col-contact">
+                        <div class="form-group padding-r"><input class="form-control input input-tr" type="text" placeholder="First Name" />
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-contact">
+                        <div class="form-group padding-l"><input class="form-control input input-tr" type="text" placeholder="Email" />
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group padding-t"><textarea class="form-control input form-control--textarea" placeholder="Message"></textarea>
+                            <div class="line-box">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col text-center"><button class="btn btn-primary submit-now" type="submit">Submit Now</button></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,311 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+nav{
+  width: 100%;
+  background-color: #fff;
+  height: 60px;
+  display: block;
+  position:fixed;
+  z-index: 2;
+  top:0;
+  left: 0;
+  border-bottom: 1px solid #a2a2a2;
+
+  h1{
+    width: auto;
+    float: left;
+    text-align: left;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0 0 0 20px;
+  }
+
+  .navbar-links-dropdown{
+    position: relative;
+    float: right;
+
+    .navbar-links-dropdown-btn{
+      position: absolute;
+      border-radius: 2px;
+      color: #fff;
+      top: 7px;
+      right: 20px;
+      font-size: 25px;
+      padding: 13px;
+      cursor: pointer;
+      text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+    }
+
+    #navbar-links-dropdown-content{
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 10px;
+      width: 150px;
+      height:auto;
+      z-index: 5;
+      background-color: #fff;
+      border: 1px solid #dadada;
+      padding: 0 0 10px 0;
+      border-radius: 3px;
+
+      a{
+        display: block;
+        width: 90%;
+        height: 35px;
+        margin: 10px auto 0 auto;
+        text-align: center;
+        line-height: 35px;
+        font-size: 13px;
+        color: #111;
+        text-decoration: none;
+        cursor: pointer;
+
+        &::selection {
+          color: #111;
+        }
+
+        &:hover{
+          background-color: #f3f3f3;
+        }
+      }
+    }
+  }
+
+}
+
+.parallax-img{
+  height: 700px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  h2{
+    position: absolute;
+    width: auto;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    padding: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 200;
+    white-space: nowrap;
+
+    @media only screen and (max-width: 400px) {
+      background-size: 20%;
+    }
+  }
+
+  &.parallax-img--one{
+    background-image: url("../../assets/img/img1.jpg");
+    margin: 60px 0 0 0;
+  }
+
+  &.parallax-img--two{
+    background-image: url("../../assets/img/img2.jpg");
+  }
+
+  &.parallax-img--three{
+    background-image: url("../../assets/img/img4.jpg");
+  }
+
+  &.parallax-img--four{
+    background-image: url("../../assets/img/img3.jpg");
+  }
+}
+
+
+.content{
+  display: block;
+  height: auto;
+  background-color: #fff;
+  width: 100%;
+
+  .location{
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 60px);
+    height: auto;
+    padding:15px  20px 25px 20px;
+
+    h3{
+      width: 100%;
+      margin: 30px 0 10px 0;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    #contact{
+      max-width: 700px !important;
+      width: 100%;
+      height: 400px;
+      margin: 30px auto;
+      border: 1px solid #e4e4e4;
+      border-radius: 3px;
+
+    }
+  }
+
+  .newsletter{
+    display: block;
+    margin: 0 auto;
+    width: calc(100% - 60px);
+    height: auto;
+    padding:15px  20px 25px 20px;
+
+    img{
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin: 30px auto 20px auto;
+    }
+
+    h3{
+      width: 100%;
+      margin: 20px 0 10px 0;
+      text-align: center;
+      font-weight: 400;
+    }
+
+    .newsletter-btn{
+      display: block;
+      border: 1px solid #a2a2a2;
+      margin: 30px auto 20px auto;
+      padding: 10px 13px;
+      border-radius: 3px;
+      width: 170px;
+      text-align: center;
+      color: #444;
+      text-decoration: none;
+      background-color: #fff;
+
+      &:hover{
+        background-color: #fafafa;
+      }
+    }
+  }
+
+
+  p{
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    width: calc(100% - 60px);
+    height: auto;
+    padding:20px  20px;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 22px;
+
+    &:first-of-type{
+      padding:55px  20px 20px 20px;
+
+      &:first-letter{
+        font-weight: 500;
+        font-size: 22px;
+        padding: 0 2px 0 0;
+      }
+    }
+
+    &:last-of-type{
+      padding:20px  20px 55px 20px;
+    }
+  }
+
+  .content-blocks{
+    max-width: 800px;
+    width: calc(100% - 60px);
+    height: 175px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px auto;
+    column-gap: 20px;
+    padding: 20px;
+
+    @media only screen and (max-width: 700px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 175px 175px;
+      height: 350px;
+      row-gap: 20px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 145px 145px;
+      height: 310px;
+      row-gap: 20px;
+    }
+
+    .content-block{
+      border: 1px solid #cbcbcb;
+      position: relative;
+      cursor: pointer;
+      border-radius: 4px;
+      margin: 0 0 35px;
+
+      span{
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 200;
+        transform: translate(-50%,-50%);
+      }
+
+      img{
+        display: block;
+        position: absolute;
+        height: 60px;
+        width: 60px;
+        left: 50%;
+        top: 50%;
+        opacity: 0.7;
+        transform: translate(-50%,-50%);
+      }
+
+
+      &:hover{
+        background-color: #fafafa;
+      }
+
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 200;
+  border-top: 1px solid #e5e5e5;
+  background-color: #f4f4f4;
+  color: #3d3d3d;
+
+  a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #3d3d3d;
+  }
+}

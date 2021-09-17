@@ -1,0 +1,20 @@
+{
+  "name": "tiptopsite-template-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    ":scss": "node-sass --watch assets/scss/ -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tiptopsite/Tiptopsite.git"
+  },
+  "author": "Jan Piotrzkowski",
+  "license": "ISC",
+  "homepage": "https://tiptopsite.net/",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

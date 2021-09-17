@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quiz</title>
+  <meta content="Quiz" property="og:title">
+  <meta content="Quiz" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/quiz.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div class="questcont" id="start">
+<h1> Let us hear what you think!<br/> Connect the symbols with categories, that you associate them with the most. 
+  Knowing what you associate the symbols with, the quiz will show you the results, telling you something about your personality! </h1>
+  <div class="btn">
+    <a href="#email" class="bttn" > Lets go! </a></div>
+    </div>
+ 
+
+  
+
+<form id="quiz" action="send3.php" method="post">
+  <div class="questcont" id="email">
+    <h1> Could you leave us your email? (We will email you the results) </h1>
+   <input type="email" name="mail" placeholder="Put your mail here!" style="width: 150px; height: 40px; text-align:center;">  
+   <div class="btn">
+    <a href="#gende" class="bttn" > Next </a></div>
+    </div>
+  </div>
+
+
+  <div class="questcont" id="gende">
+    <h1> Pick your gender </h1>
+    <div class="radiosy"> 
+    <label><input type="radio" name="gender" value="Men"> Man </label>
+    <label><input type="radio" name="gender" value="Woman"> Woman </label>
+    <label><input type="radio" name="gender" value="Other"> Other </label>
+    <div class="btn">
+      <a href="#age" class="bttn" > Next </a></div>
+      </div>
+  </div>
+
+
+  <div class="questcont" id="age">
+    <h1> What is your age? </h1>
+    <div class="radiosy"> 
+    <label><input type="radio" name="age" value="less18"> Less than 18 </label>
+    <label><input type="radio" name="age" value="18to23"> 18 - 23 </label>
+    <label><input type="radio" name="age" value="23to30"> 23 - 30 </label>
+    <label><input type="radio" name="age" value="30to40"> 30 - 40 </label>
+    <label><input type="radio" name="age" value="40more"> More than 40 </label>
+    <div class="btn">
+      <a href="#gende" class="bttn" > Previous </a>
+      <a href="#1" class="bttn" > Next </a></div>
+      </div>
+  </div>
+
+<div class="questcont" id="1">
+<h1> Serpent </h1>
+<div class="radiosy"> 
+<label><input type="radio" name="1" value="Family"> Family </label>
+<label><input type="radio" name="1" value="MaterialGoods"> Material goods </label>
+<label><input type="radio" name="1" value="Religion/spirituality"> Religion/spirituality </label>
+<label><input type="radio" name="1" value="Emotions"> Emotions </label>
+<label><input type="radio" name="1" value="Law"> Law </label>
+<label><input type="radio" name="1" value="Ambitions"> Ambitions </label> <div class="btn">
+<a href="#age" class="bttn" > Previous </a>
+<a href="#two" class="bttn" > Next </a></div>
+</div>
+</div>
+
+<div class="questcont" id="two">
+  <h1> Bread </h1>
+  <div class="radiosy"> 
+    <label><input type="radio" name="2" value="Family"> Family </label>
+    <label><input type="radio" name="2" value="MaterialGoods"> Material goods </label>
+    <label><input type="radio" name="2" value="Religion/spirituality"> Religion/spirituality </label>
+    <label><input type="radio" name="2" value="Emotions"> Emotions </label>
+    <label><input type="radio" name="2" value="Law"> Law </label>
+    <label><input type="radio" name="2" value="Ambitions"> Ambitions </label> <div class="btn">
+    <a href="#1" class="bttn" > Previous </a>
+<a href="#2" class="bttn" > Next </a></div>
+  </div>
+  </div>
+
+  <div class="questcont" id="2">
+    <h1> Hourglass </h1>
+    <div class="radiosy"> 
+      <label><input type="radio" name="3" value="Family"> Family </label>
+      <label><input type="radio" name="3" value="MaterialGoods"> Material goods </label>
+      <label><input type="radio" name="3" value="Religion/spirituality"> Religion/spirituality </label>
+      <label><input type="radio" name="3" value="Emotions"> Emotions </label>
+      <label><input type="radio" name="3" value="Law"> Law </label>
+      <label><input type="radio" name="3" value="Ambitions"> Ambitions </label> <div class="btn">
+      <a href="#two" class="bttn" > Previous </a>
+<a href="#3" class="bttn" > Next </a></div>
+    </div>
+    
+    </div>
+
+    <div class="questcont" id="3">
+      <h1> Bird </h1>
+      <div class="radiosy"> 
+        <label><input type="radio" name="4" value="Family"> Family </label>
+        <label><input type="radio" name="4" value="MaterialGoods"> Material goods </label>
+        <label><input type="radio" name="4" value="Religion/spirituality"> Religion/spirituality </label>
+        <label><input type="radio" name="4" value="Emotions"> Emotions </label>
+        <label><input type="radio" name="4" value="Law"> Law </label>
+        <label><input type="radio" name="4" value="Ambitions"> Ambitions </label> <div class="btn">
+        <a href="#2" class="bttn" > Previous </a>
+<a href="#4" class="bttn" > Next </a></div>
+      </div>
+      
+        
+        </div>
+        <div class="questcont" id="4">
+          <h1> Heart </h1>
+          <div class="radiosy"> 
+            <label><input type="radio" name="5" value="Family"> Family </label>
+            <label><input type="radio" name="5" value="MaterialGoods"> Material goods </label>
+            <label><input type="radio" name="5" value="Religion/spirituality"> Religion/spirituality </label>
+            <label><input type="radio" name="5" value="Emotions"> Emotions </label>
+            <label><input type="radio" name="5" value="Law"> Law </label>
+            <label><input type="radio" name="5" value="Ambitions"> Ambitions </label> <div class="btn">
+            <a href="#3" class="bttn" > Previous </a>
+<a href="#5" class="bttn" > Next </a></div>
+          </div>
+          
+          </div>
+          <div class="questcont" id="5">
+            <h1> Wolf </h1>
+            <div class="radiosy"> 
+              <label><input type="radio" name="6" value="Family"> Family </label>
+              <label><input type="radio" name="6" value="MaterialGoods"> Material goods </label>
+              <label><input type="radio" name="6" value="Religion/spirituality"> Religion/spirituality </label>
+              <label><input type="radio" name="6" value="Emotions"> Emotions </label>
+              <label><input type="radio" name="6" value="Law"> Law </label>
+              <label><input type="radio" name="6" value="Ambitions"> Ambitions </label> <div class="btn">
+              <a href="#4" class="bttn" > Previous </a>
+<input type="submit" value="Send!">
+            </div></div>
+</form>
+
+<script type="text/javascript">
+$("a.bttn").on('click',function(e) {
+    var url = e.target.href;
+    var hash = url.substring(url.indexOf("#")+1);
+    $('html, body').animate({
+        scrollTop: $('#'+hash).offset().top
+    }, 500);
+    return false;
+});
+  </script>
+
+</body>
+</html>

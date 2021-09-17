@@ -1,0 +1,224 @@
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+   background: url(../../assets/img/idea.png) no-repeat, linear-gradient(180deg, rgba(17,14,59,1) 0%, rgba(114,71,116,1) 100%);
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
+}
+
+section {
+	color: white;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	padding-top: 15vh;
+}
+
+#nazw {
+	position: absolute;
+	width: 100vw;
+	top: 42vh;
+	color: white;
+	text-align: center;
+}
+
+#log {
+	text-align: right;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+overflow-X: hidden;
+}
+
+#clouds {
+  padding: 100px 0;
+}
+
+
+
+.cloud {
+  width: 200px;
+  height: 60px;
+  background: linear-gradient(180deg, rgba(205,205,212,1) 0%, rgba(176,113,179,1) 100%);
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: relative;
+}
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+
+
+.x1 {
+	left: 1000px;
+  -webkit-animation: moveclouds 55s linear infinite;
+  -moz-animation: moveclouds 55s linear infinite;
+  -o-animation: moveclouds 55s linear infinite;
+}
+
+
+.x2 {
+  left: 800px;
+  top: 50px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6;
+  -webkit-animation: moveclouds 60s linear infinite;
+  -moz-animation: moveclouds 60ss linear infinite;
+  -o-animation: moveclouds 60s linear infinite;
+}
+
+.x3 {
+  left: 500px;
+  top: 150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 52s linear infinite;
+  -moz-animation: moveclouds 52s linear infinite;
+  -o-animation: moveclouds 52s linear infinite;
+}
+
+.x4 {
+  left: 290px;
+  top: -100px;
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75;
+  -webkit-animation: moveclouds 53s linear infinite;
+  -moz-animation: moveclouds 53s linear infinite;
+  -o-animation: moveclouds 53s linear infinite;
+}
+
+.x5 {
+  left: 732px;
+  top: -150px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8;
+  -webkit-animation: moveclouds 57s linear infinite;
+  -moz-animation: moveclouds 57s linear infinite;
+  -o-animation: moveclouds 57s linear infinite;
+}
+
+
+.x6 {
+  left: 800px;
+  top: 333px;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  transform: scale(0.3);
+  opacity: 0.3;
+  -webkit-animation: moveclouds 47s linear infinite;
+  -moz-animation: moveclouds 47s linear infinite;
+  -o-animation: moveclouds 47s linear infinite;
+}
+
+
+
+.x7 {
+  left: 1200px;
+  top: 350px;
+  -webkit-transform: scale(0.45);
+  -moz-transform: scale(0.45);
+  transform: scale(0.45);
+  opacity: 0.45;
+  -webkit-animation: moveclouds 83s linear infinite;
+  -moz-animation: moveclouds 83s linear infinite;
+  -o-animation: moveclouds 83s linear infinite;
+}
+
+
+.x8 {
+  left: 320px;
+  top: 250px;
+  -webkit-transform: scale(0.33);
+  -moz-transform: scale(0.33);
+  transform: scale(0.33);
+  opacity: 0.33;
+  -webkit-animation: moveclouds 64s linear infinite;
+  -moz-animation: moveclouds 64s linear infinite;
+  -o-animation: moveclouds 64s linear infinite;
+}
+
+
+.x9 {
+  left: 140px;
+  top: 50px;
+  -webkit-transform: scale(0.46);
+  -moz-transform: scale(0.46);
+  transform: scale(0.46);
+  opacity: 0.46;
+  -webkit-animation: moveclouds 51s linear infinite;
+  -moz-animation: moveclouds 51s linear infinite;
+  -o-animation: moveclouds 5s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1100px;
+  }
+}
+
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1100px;
+  }
+}
+
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: 1500px;
+  }
+
+  100% {
+    margin-left: -1100px;
+  }
+}
